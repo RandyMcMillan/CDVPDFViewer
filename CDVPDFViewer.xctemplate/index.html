@@ -27,30 +27,21 @@
     </head>
     <body>
         <div class="app">
+       
             <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        
-            <button onclick="cordova.exec('PDFViewerCommand.showPDF', 'CordovaBot.pdf');">Click to open  CordovaBot.pdf!</button>
+            
+            <button onclick="cordova.exec('___FILEBASENAME___.showPDF', 'CordovaBot.pdf');">
+                Click to open  CordovaBot.pdf!
+            </button>
 
-            <button onclick="cordova.exec('PDFViewerCommand.showPDF', 'readme.pdf');">Click to open  readme.pdf!</button>
-
+            <button onclick="cordova.exec('___FILEBASENAME___.showPDF', 'readme.pdf');">
+                Click to open  readme.pdf!
+            </button>
         
         </div>
-        <script type="text/javascript" src="cordova-2.1.0.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="PDFViewer.js"></script>
- 
-        <script type="text/javascript">
-            app.initialize();
-            
-            
-            loc = 'CordovaBot.pdf';
-
-            
-            
-        </script>
+        <script type="text/javascript" src="cordova-2.3.0.js"></script>
+        <script type="text/javascript" src="___FILEBASENAME___.js"></script>
+        <script type="text/javascript">app.initialize(); loc = 'CordovaBot.pdf';</script>
+    
     </body>
 </html>
