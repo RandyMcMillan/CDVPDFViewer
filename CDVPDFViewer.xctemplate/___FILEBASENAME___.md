@@ -18,6 +18,8 @@ ___FILEBASENAME___
 
 or 
 
+* Add config.xml values
+
 `<plugin name="___FILEBASENAME___" value="___FILEBASENAME___" />`
 
 
