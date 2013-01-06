@@ -8,25 +8,40 @@ ___FILEBASENAME___
 
 
 
-* Add`<script type="text/javascript" charset="utf-8" src="___FILEBASENAME___.js"></script>`to your www/index.html
+* Add to www/index.html
 
+`<script type="text/javascript" charset="utf-8" src="___FILEBASENAME___.js"></script>`
+
+
+---
 * Add Cordova.plist values
 
 | Key | Type | Value |
 | ------------ |---| ------------- |
 | ___FILEBASENAME___ | String | ___FILEBASENAME___ |
 
-or 
+####or 
 
 * Add config.xml values
 
 `<plugin name="___FILEBASENAME___" value="___FILEBASENAME___" />`
 
+<BR>
 
+---
+
+
+* Add Folder Group from 
+
+`~/Library/Developer/Xcode/Templates/File\ Templates\CDVPDFViewer/UIImage+PDF`
+
+
+<br>
 
 [Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/CDVPDFViewer.xctemplate/index.html)
 
 
+<br>
 Permission is hereby granted, free of charge, to any person obtaining a copy of 
 this software and associated documentation files (the "Software"), to deal in 
 the Software without restriction, including without limitation the rights to 
