@@ -8,16 +8,16 @@
  
  var cordovaRef = window.PhoneGap || window.Cordova || window.cordova; // old to new fallbacks
  
- function PDFViewer() {
+ function ___FILEBASENAME___() {
  // Does nothing
  }
  
   
  // Callback when the user chooses the 'Done' button
  // called from native
- PDFViewer._onClose = function()
+ ___FILEBASENAME___._onClose = function()
  {
- window.plugins.PDFViewer.onClose();
+ window.plugins.___FILEBASENAME___.onClose();
  };
  
  
@@ -25,19 +25,19 @@
 /* The interface that you will use to access functionality */
  
  // Show a webpage, will result in a callback to onLocationChange
- PDFViewer.prototype.showPDF = function(loc)
+ ___FILEBASENAME___.prototype.showPDF = function(loc)
  {
- cordovaRef.exec("PDFViewerCommand.showPDF", loc);
+ cordovaRef.exec("___FILEBASENAME___.showPDF", loc);
  };
  
  // close the browser, will NOT result in close callback
- PDFViewer.prototype.close = function()
+ ___FILEBASENAME___.prototype.close = function()
  {
- cordovaRef.exec("PDFViewerCommand.close");
+ cordovaRef.exec("___FILEBASENAME___.close");
  };
  
  // Not Implemented
- PDFViewer.prototype.jsExec = function(jsString)
+ ___FILEBASENAME___.prototype.jsExec = function(jsString)
  {
  // Not Implemented!!
  //PhoneGap.exec("PDFViewerCommand.jsExec",jsString);
@@ -45,22 +45,22 @@
  
  // Note: this plugin does NOT install itself, call this method some time after deviceready to install it
  // it will be returned, and also available globally from window.plugins.PDFViewer
- PDFViewer.install = function()
+ ___FILEBASENAME___.install = function()
  {
  if(!window.plugins) {
  window.plugins = {};
  }
- if ( ! window.plugins.PDFViewer ) {
- window.plugins.PDFViewer = new PDFViewer();
+ if ( ! window.plugins.___FILEBASENAME___ ) {
+ window.plugins.___FILEBASENAME___ = new ___FILEBASENAME___();
  }
  
  };
  
  
  if (cordovaRef && cordovaRef.addConstructor) {
- cordovaRef.addConstructor(PDFViewer.install);
+ cordovaRef.addConstructor(___FILEBASENAME___.install);
  } else {
- console.log("PDFViewer Cordova Plugin could not be installed.");
+ console.log("___FILEBASENAME___ Cordova Plugin could not be installed.");
  return null;
  }
  
