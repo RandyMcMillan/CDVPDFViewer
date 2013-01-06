@@ -5,11 +5,11 @@
 //  Copyright 2012, Randy McMillan
 
 #import <Cordova/CDVPlugin.h>
-#import "PDFViewerViewController.h"
+#import "___FILEBASENAME___ViewController.h"
 
-@interface PDFViewerCommand : CDVPlugin <PDFViewerDelegate>{}
+@interface ___FILEBASENAME___ : CDVPlugin <___FILEBASENAME___Delegate>{}
 
-@property (nonatomic, strong) PDFViewerViewController *pdfViewer;
+@property (nonatomic, strong) ___FILEBASENAME___ViewController *pdfViewer;
 
 - (void)showPDF:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options;
 

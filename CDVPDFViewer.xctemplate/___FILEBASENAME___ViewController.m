@@ -4,10 +4,10 @@
 //  Copyright 2010 Nitobi. All rights reserved.
 //  Copyright 2012, Randy McMillan
 
-#import "PDFViewerViewController.h"
+#import "___FILEBASENAME___ViewController.h"
 #import "UIImage+PDF.h"
 
-@implementation PDFViewerViewController
+@implementation ___FILEBASENAME___ViewController
 
 @synthesize delegate, orientationDelegate;
 @synthesize closeBtn;
@@ -43,7 +43,7 @@
 	return resource;// if all else fails
 }
 
-- (PDFViewerViewController *)initWithScale:(BOOL)enabled
+- (___FILEBASENAME___ViewController *)initWithScale:(BOOL)enabled
 {
 	self = [super init];
 	return self;
@@ -114,7 +114,7 @@
 #endif
 }
 
-- (void)closeBrowser
+- (void)closeViewer
 {
 	if (self.delegate != nil) {
 		[self.delegate onClose];
@@ -130,7 +130,7 @@
 
 - (IBAction)onDoneButtonPress:(id)sender
 {
-	[self closeBrowser];
+	[self closeViewer];
 }
 
 /*- (void)webView:(UIWebView *)wv didFailLoadWithError:(NSError *)error {

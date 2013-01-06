@@ -6,7 +6,7 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol PDFViewerDelegate <NSObject>
+@protocol ___FILEBASENAME___Delegate <NSObject>
 
 - (void)onClose;
 
@@ -22,7 +22,7 @@
 
 @class PDFView;
 
-@interface PDFViewerViewController : UIViewController <UIWebViewDelegate>{}
+@interface ___FILEBASENAME___ViewController : UIViewController <UIWebViewDelegate>{}
 
 @property (nonatomic, strong) IBOutlet UIButton *closeBtn;
 
@@ -32,12 +32,17 @@
 @property (nonatomic, strong) IBOutlet UIToolbar	*toolBar;
 
 // unsafe_unretained is equivalent to assign - used to prevent retain cycles in the two properties below
-@property (nonatomic, unsafe_unretained) id <PDFViewerDelegate> delegate;
+@property (nonatomic, unsafe_unretained) id <___FILEBASENAME___Delegate> delegate;
 @property (nonatomic, unsafe_unretained) id						orientationDelegate;
 
-- (PDFViewerViewController *)initWithScale:(BOOL)enabled;
+
++ (NSString *)resolveImageResource:(NSString *)resource;
+- (___FILEBASENAME___ViewController *)initWithScale:(BOOL)enabled;
+- (void)viewDidLoad;
+
 - (IBAction)onDoneButtonPress:(id)sender;
 - (void)loadPDF:(NSString *)pdfName;
 - (void)closeViewer;
+- (BOOL)shouldAutorotate;
 
 @end

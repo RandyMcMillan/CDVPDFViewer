@@ -4,10 +4,10 @@
 //  Copyright 2010 Nitobi. All rights reserved.
 //  Copyright 2012, Randy McMillan
 
-#import "PDFViewerCommand.h"
+#import "___FILEBASENAME___.h"
 #import <Cordova/CDVViewController.h>
 
-@implementation PDFViewerCommand
+@implementation ___FILEBASENAME___
 
 @synthesize pdfViewer;
 
@@ -15,9 +15,9 @@
 {
 	if (self.pdfViewer == nil) {
 #if __has_feature(objc_arc)
-			self.pdfViewer = [[PDFViewerViewController alloc] initWithScale:NO];
+			self.pdfViewer = [[___FILEBASENAME___ViewController alloc] initWithScale:NO];
 #else
-			self.pdfViewer = [[[PDFViewerViewController alloc] initWithScale:NO] autorelease];
+			self.pdfViewer = [[[___FILEBASENAME___ViewController alloc] initWithScale:NO] autorelease];
 #endif
 		self.pdfViewer.delegate				= self;
 		self.pdfViewer.orientationDelegate	= self.viewController;
