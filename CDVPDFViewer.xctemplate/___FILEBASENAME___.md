@@ -16,6 +16,12 @@ ___FILEBASENAME___
 | ------------ |---| ------------- |
 | ___FILEBASENAME___ | String | ___FILEBASENAME___ |
 
+or 
+
+`<plugin name="___FILEBASENAME___" value="___FILEBASENAME___" />`
+
+
+
 [Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVPlugin/master/CDVPlugin.xctemplate/index.html)
 
 
