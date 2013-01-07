@@ -17,17 +17,17 @@ Cordova (iOS) Xcode Plugin Template
 
 * Press <COMMAND+n>    
 
-    ![image](https://raw.github.com/RandyMcMillan/CDVPlugin/master/ScreenShot2.png)  
+    ![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot2.png)  
 
 * RENAME your Plugin! (_Do not use CDVPlugin_)  
 
-    ![image](https://raw.github.com/RandyMcMillan/CDVPlugin/master/ScreenShot3.png)  
+    ![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot3.png)  
 
 * Copy the MyCDVPlugin.js file to your /www folder
 
-    ![image](https://raw.github.com/RandyMcMillan/CDVPlugin/master/ScreenShot4.png)
+    ![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot4.png)
     
-[Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVPlugin/master/CDVPlugin.xctemplate/index.html)
+[Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/CDVPDFViewer.xctemplate/index.html)
 
 ####Add to www/index.html
 
