@@ -15,11 +15,10 @@ Cordova (iOS) Xcode Plugin Template
 ###Usage:
 ####Open your Cordova (iOS) Xcode Project
 
-* Press <COMMAND+n>    
+* Press `<COMMAND+n>`    
 
     ![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot2.png)  
 
-* RENAME your Plugin! (_Do not use CDVPlugin_)  
 
     ![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot3.png)  
 
