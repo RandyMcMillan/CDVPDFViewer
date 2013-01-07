@@ -1,88 +1,94 @@
-##PDFViewer for Cordova iOS
+CDVPDFViewer
+===
 
-    $ git clone https://github.com/RandyMcMillan/PDFViewer.git
-
-PDFViewer is meant for one purpose.  To view PDFs that are included in the native file structure of your app.
-
-Familiar usage:   
+Cordova (iOS) Xcode Plugin Template
 ---
-"showPDF" usage is exactly like ChildBrowser's "showWebPage" except you send a bundled pdf file name instead of a url.
-
-##Install:
 
 
-Copy PDFViewer to your project plugin folder.
 
-![image](https://raw.github.com/RandyMcMillan/PDFViewer/master/ScreenShot7.png)
+###Installation:
+    $ cd ~/Library/Developer/Xcode/Templates/File\ Templates
+    $ git clone https://github.com/RandyMcMillan/CDVPlugin.git
 
-<br>
+![image](https://raw.github.com/RandyMcMillan/CDVPlugin/master/ScreenShot.png)
 
-###Add to Cordova.plist
+###Usage:
+####Open your Cordova (iOS) Xcode Project
+
+* Press <COMMAND+n>    
+
+    ![image](https://raw.github.com/RandyMcMillan/CDVPlugin/master/ScreenShot2.png)  
+
+* RENAME your Plugin! (_Do not use CDVPlugin_)  
+
+    ![image](https://raw.github.com/RandyMcMillan/CDVPlugin/master/ScreenShot3.png)  
+
+* Copy the MyCDVPlugin.js file to your /www folder
+
+    ![image](https://raw.github.com/RandyMcMillan/CDVPlugin/master/ScreenShot4.png)
+    
+[Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVPlugin/master/CDVPlugin.xctemplate/index.html)
+
+####Add to www/index.html
+
+`<script type="text/javascript" charset="utf-8" src="CDVPDFViewer.js"></script>`
 
 
+
+
+#####Add Cordova.plist values
 
 | Key | Type | Value |
-| ------------ | ------------- | ------------ |
-| PDFViewerCommand | String  | PDFViewerCommand |
+| ------------ |---| ------------- |
+| CDVPDFViewer | String | CDVPDFViewer |
+
+#####Cordova 2.3+ Add config.xml values
+`<plugin name="CDVPDFViewer" value="CDVPDFViewer" />`
 
 
-![image](https://raw.github.com/RandyMcMillan/PDFViewer/master/Cordova.plist.png)
-
-###Cordova 2.3.0 
-
-#####config.xml
-
-        <plugin name="PDFViewerCommand" value="PDFViewerCommand" />
 
 
-###Examples: <br><br>
+Add Folder Group from 
+---
+`~/Library/Developer/Xcode/Templates/File\ Templates\CDVPDFViewer/UIImage+PDF`
 
-![image](https://raw.github.com/RandyMcMillan/PDFViewer/master/ScreenShot.png)
+![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/CDVPDFViewer.xctemplate/ScreenShot1.png)
+
+#### *Option 
+
+Link or Copy into the Xcode project
 
 
-    <button onclick="cordova.exec('PDFViewerCommand.showPDF', 'CordovaBot.pdf');">Click to open  CordovaBot.pdf!</button>
-
-
+![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/CDVPDFViewer.xctemplate/ScreenShot2.png)
 <br>
 
-![image](https://raw.github.com/RandyMcMillan/PDFViewer/master/ScreenShot2.png)
-
-    <button onclick="cordova.exec('PDFViewerCommand.showPDF', 'readme.pdf');">Click to open  readme.pdf!</button>
+[Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/CDVPDFViewer.xctemplate/index.html)
 
 
 
+<br><br>
 
-<br>
-
-![image](https://raw.github.com/RandyMcMillan/PDFViewer/master/ScreenShot3.png)
-![image](https://raw.github.com/RandyMcMillan/PDFViewer/master/ScreenShot4.png)
-![image](https://raw.github.com/RandyMcMillan/PDFViewer/master/ScreenShot5.png)
-![image](https://raw.github.com/RandyMcMillan/PDFViewer/master/ScreenShot6.png)
-
-<br>
-
-
-
-#####NOTES: 
-
-* PDFViewer is not meant to replace ChildBrowser.
-
-* PDFViewer only displays PDFs.
-
-#####TODO: 
-
-* Add better AutoResizing support. (Boolean toggle)
-* Add Modal display options. (fullscreen, page, form)
-* Add Modal transition options. (curl, dissolve, swap)
-
-<br>
-
-This code is dependent on the Apache Cordova (iOS) project. 
---
-[Apache Cordova (iOS) project](http://cordova.apache.org)  
-[git://git.apache.org/cordova-ios.git](git://git.apache.org/cordova-ios.git)  
-
-
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ 
+ http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+ 
+ 
+ or 
+ 
+ 
 The MIT License
 
 Copyright (c) 2012 Randy McMillan
