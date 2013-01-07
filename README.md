@@ -49,7 +49,7 @@ Cordova (iOS) Xcode Plugin Template
 
 Add Folder Group from 
 ---
-`~/Library/Developer/Xcode/Templates/File\ Templates\CDVPDFViewer/UIImage+PDF`
+`~/Library/Developer/Xcode/Templates/File\ Templates/CDVPDFViewer/UIImage+PDF`
 
 ![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/CDVPDFViewer.xctemplate/ScreenShot1.png)
 
