@@ -13,6 +13,8 @@ ___FILEBASENAME___
 `<script type="text/javascript" charset="utf-8" src="___FILEBASENAME___.js"></script>`
 
 
+
+
 #####Add Cordova.plist values
 
 | Key | Type | Value |
