@@ -22,7 +22,7 @@ Cordova (iOS) Xcode Plugin Template
 
     ![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot3.png)  
 
-* Copy the MyCDVPlugin.js file to your /www folder
+* Copy the CDVPDFViewer.js file to your /www folder
 
     ![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot4.png)
     
