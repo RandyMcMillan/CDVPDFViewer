@@ -2,7 +2,11 @@
 
 //  Created by Jesse MacFadyen on 10-05-29.
 //  Copyright 2010 Nitobi. All rights reserved.
-//  Copyright 2012, Randy McMillan
+//
+//  ___FILEBASENAME___
+//  CDVEmailComposer Template Created Jan 7 2013
+//  Copyright 2013 @RandyMcMillan
+//  //  Copyright 2012, Randy McMillan
 
 #import "___FILEBASENAME___.h"
 #import <Cordova/CDVViewController.h>
@@ -55,6 +59,7 @@
 
 		[super dealloc];
 	}
+
 #endif
 
 @end
