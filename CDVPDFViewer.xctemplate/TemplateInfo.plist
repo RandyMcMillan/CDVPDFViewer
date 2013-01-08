@@ -7,7 +7,7 @@
 		<string>public.objective-c-source</string>
 	</array>
 	<key>Description</key>
-	<string>Cordova Plugin Template. Do not use CDVPlugin as your plugin name.</string>
+	<string>Cordova iOS PDFViewer Plugin Template. </string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>MainTemplateFile</key>
