@@ -37,7 +37,7 @@
 
 	[self.viewController presentModalViewController:pdfViewer animated:YES];
 
-	NSString *pdfName = (NSString *)[arguments objectAtIndex:0];
+	NSString *pdfName = (NSString *)[arguments objectAtIndex:1];
 
 	[self.pdfViewer loadPDF:pdfName];	// @"YingYang.pdf"];
 }
