@@ -88,7 +88,12 @@
 
 	//     imageView.center = self.view.superview.center;
 
+#if !__has_feature(objc_arc)
+
 	[tempImageView release];
+
+#endif
+
 }
 
 - (void)didReceiveMemoryWarning

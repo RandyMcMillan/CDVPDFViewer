@@ -14,6 +14,14 @@
 
 @property (nonatomic, strong) ___FILEBASENAME___ViewController *pdfViewer;
 
-- (void)showPDF:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options;
+
+/*
+ *
+ *   - (void)myMethod:(CDVInvokedUrlCommand*)command;
+ *
+ */
+
+
+- (void)showPDF:(CDVInvokedUrlCommand*)command;
 
 @end

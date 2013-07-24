@@ -15,7 +15,25 @@
 
 @synthesize pdfViewer;
 
-- (void)showPDF:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options	// args: url
+
+/*
+ *
+ *   - (void)myPluginMethod:(CDVInvokedUrlCommand*)command
+ *   {
+ *   // Check command.arguments here.
+ *   [self.commandDelegate runInBackground:^{
+ *   NSString* payload = nil;
+ *   // Some blocking logic...
+ *   CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:payload];
+ *   // The sendPluginResult method is thread-safe.
+ *   [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+ *   }];
+ *   }
+ *
+ */
+
+
+- (void)showPDF:(CDVInvokedUrlCommand*)command
 {
 	if (self.pdfViewer == nil) {
 #if __has_feature(objc_arc)
@@ -37,12 +55,12 @@
 
 	[self.viewController presentModalViewController:pdfViewer animated:YES];
 
-	NSString *pdfName = (NSString *)[arguments objectAtIndex:1];
+	NSString *pdfName = (NSString *)[command.arguments objectAtIndex:0];
 
 	[self.pdfViewer loadPDF:pdfName];	// @"YingYang.pdf"];
 }
 
-- (void)close:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options	// args: url
+- (void)close:(CDVInvokedUrlCommand*)command
 {
 	[self.pdfViewer closeViewer];
 }
